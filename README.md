@@ -1,4 +1,5 @@
-### IA : Prediction encombrement d'un restaurant universitaire
+# Intelligence Artificielle
+### Prediction encombrement d'un restaurant universitaire
 ____
 Il s'agit d'un **ANN** (**A**rtificial **N**eural **N**etwork) permettant de prédire si le restaurant universitaire sera complet ou non en utilisant simplement un _timestamp_.
 ____
@@ -33,7 +34,11 @@ Il est nécessaire d'installer quelques librairies en exécutant la commande sui
 ```bash
 sudo pip install -r requirements.txt
 ```
-**Pour les flemmards, voici la liste des commandes à exécuter  :**
+#### Informations supplémentaires :
+Pour la prédiction, l'IA à besoin de la **température** au moment du timestamp passé en argument. Pour celà le script fait appel à **un capteur de température relié à une carte Raspberry pi**, si le timestamp est dans un futur proche (moins de 2h). S'il s'agit d'un futur plus lointain, le script utilise l'API météo nommée **OpenWeather**.
+____
+# Pour les flemmards
+**voici la liste des commandes à exécuter  :**
 ```bash
 sudo pip install -r requirements.txt
 python generate_data.py 
