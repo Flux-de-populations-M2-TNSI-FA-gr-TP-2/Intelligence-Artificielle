@@ -99,20 +99,24 @@ def main():
 
     y_pred = classifier.predict(X_test)
 
-    print("\n===== Entrées =====")
-    print(hour)
-    print(minute)
-    print(day)
-    print(temperature)
-    print(X_test)
-
-    print("\n===== Résultats =====")
-    print(y_pred[0][0])
-    print(y_pred[0][0] > 0.5)
+    #print("\n===== Entrées =====")
+    #print(hour)
+    #print(minute)
+    #print(day)
+    #print(temperature)
+    #print(X_test)
+    #print("\n===== Résultats =====")
+    #print(y_pred[0][0])
+    #print(y_pred[0][0] > 0.5)
+    #if y_pred[0][0] > 0.5:
+    #    print("Tu peux aller au RU.")
+    #else:
+    #    print("Ne va pas au RU.")
     if y_pred[0][0] > 0.5:
-        print("Tu peux aller au RU.")
+        return 1
     else:
-        print("Ne va pas au RU.")
+        return 0
+
 
 
 if __name__ == '__main__':
