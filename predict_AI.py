@@ -113,9 +113,9 @@ def main():
     #else:
     #    print("Ne va pas au RU.")
     if y_pred[0][0] > 0.5:
-        return 1
+        print(1)
     else:
-        return 0
+        print(0)
 
 
 
