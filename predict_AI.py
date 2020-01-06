@@ -1,4 +1,6 @@
 # Import libraries
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 import argparse, datetime, json, pandas as pd, pickle, math, requests
 from keras.models import Sequential
 from keras.layers import Dense
